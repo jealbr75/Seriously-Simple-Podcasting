@@ -423,7 +423,7 @@ if ( isset( $category1['category'] ) && $category1['category'] ) { ?>
 			<itunes:image href="<?php echo esc_url( $episode_image ); ?>"></itunes:image>
 			<googleplay:image href="<?php echo esc_url( $episode_image ); ?>"></googleplay:image>
 <?php } ?>
-			<enclosure url="<?php echo esc_url( $enclosure ); ?>" length="<?php echo esc_attr( $size ); ?>" type="<?php echo esc_attr( $mime_type ); ?>"></enclosure>
+			<enclosure url="<?php echo esc_url( $enclosure ); ?>" length="<?php echo esc_attr( $size ); ?>" type="<?php echo esc_attr( $mime_type ); ?>" />
 			<itunes:explicit><?php echo esc_html( $itunes_explicit_flag ); ?></itunes:explicit>
 			<googleplay:explicit><?php echo esc_html( $googleplay_explicit_flag ); ?></googleplay:explicit>
 			<itunes:block><?php echo esc_html( $block_flag ); ?></itunes:block>
